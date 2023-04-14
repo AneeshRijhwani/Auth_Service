@@ -31,7 +31,7 @@ const signIn = async (req,res)=>{
             data:response,
             success:true,
             err:{}
-        })
+        });
     } catch (error) {
         console.log(error);
         return res.status(500).json({
